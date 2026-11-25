@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Urbanist", system-ui, sans-serif;
+
+  --color-ink: #121212;
+  --color-muted: #5E5E6B;
+  --color-muted-2: #4A4A55;
+  --color-soft: #F3F3F7;
+  --color-soft-2: #F6F6F9;
+  --color-line: #E6E6EC;
+  --color-line-2: #EEEEF3;
+  --color-check: #C9C9D3;
+
+  /* Colores por categoría */
+  --color-lima: #E6F6C2;
+  --color-durazno: #FDE3C2;
+  --color-lavanda: #D8D2F8;
+  --color-lavanda-2: #C4BBF5;
+  --color-menta: #D2F2D8;
+  --color-crema: #FBF2B4;
+
+  /* Acción principal */
+  --color-amarillo: #F7DC3E;
+
+  --color-error: #9A2E0E;
+  --color-error-border: #E0522A;
+  --color-error-bg: #FFF4EF;
+  --color-ok: #2E9C57;
+}
+
+html,
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Oculta la barra de scroll en las filas de chips */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.pb-safe {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
